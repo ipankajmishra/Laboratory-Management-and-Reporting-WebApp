@@ -1,0 +1,128 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+      <ion-row>
+          <ion-col size="11">
+              <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Sample</h3>
+        
+          </ion-col>
+          <ion-col size="1">
+              <ion-button expand="block" fill="outline" (click)="logout()">Logout</ion-button>
+        
+          </ion-col>
+      </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <br>
+    <br>
+    <ion-card>
+  <ion-row>
+      
+          <ion-col size="0.5">
+
+            </ion-col>
+        <ion-col size="2">
+            <ion-item>
+                <ion-label>Mr/Mrs./Miss</ion-label>
+                <ion-select [(ngModel)]="mrmiss" (ngModelChange)="optionsFn()" placeholder="Select One">
+                  <ion-select-option value="Mr">Mr.</ion-select-option>
+                  <ion-select-option value="Mrs">Mrs.</ion-select-option>
+                  <ion-select-option value="Miss">Miss</ion-select-option>
+                </ion-select>
+              </ion-item>
+        </ion-col>
+        <ion-col size="1">
+            
+    
+          </ion-col>
+          <ion-col size="2">
+              <ion-item>
+                  <ion-label >Age<ion-text color="danger">*</ion-text></ion-label>
+                  <ion-input [(ngModel)]="age" (ngModelChange)="optionsage()" required type="number"></ion-input>
+                </ion-item>
+      
+            </ion-col>
+            <ion-col size="1">
+            
+    
+              </ion-col>
+        <ion-col size="2">
+            <ion-item>
+                <ion-label>Gender</ion-label>
+                <ion-select [(ngModel)]="sex" (ngModelChange)="optionssex()" placeholder="Select One">
+                  <ion-select-option value="F">Female</ion-select-option>
+                  <ion-select-option value="M">Male</ion-select-option>
+                </ion-select>
+              </ion-item>
+        </ion-col>
+        <ion-col size="1">
+    
+        </ion-col>
+        <ion-col size="2">
+            <ion-item>
+                <ion-label position="floating">Select Date</ion-label>
+                <ion-datetime [(ngModel)]="date" (ngModelChange)="optionsdate()" displayFormat="DD/MM/YYYY" min="1994-03-14" max="2025-12-09"></ion-datetime>
+              </ion-item>
+        </ion-col>
+     
+  </ion-row>
+  
+</ion-card>
+<br>
+  <br>
+
+    
+    <ion-card class="name">
+        <!--<ion-item>
+            <ion-label position="stacked"><span style="font-size: 40px">First Name </span><ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Last Name <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label position="stacked">Referred By <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+            </ion-item>
+          -->
+            <ion-item>
+                <ion-label align="center" position="stacked"><span style="font-size: 40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient Details</span></ion-label>
+                <br>
+                <ion-item>
+                    <ion-icon name="man"></ion-icon>
+                    <ion-input [(ngModel)]="firstname" (ngModelChange)="optionsfirstname()" class="ioninput" placeholder="First Name"></ion-input>
+
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="man"></ion-icon>
+                    <ion-input [(ngModel)]="lastname" (ngModelChange)="optionslastname()" class="ioninput" placeholder="Last Name"></ion-input>
+
+                </ion-item>
+            <ion-item>
+                <ion-icon name="man"></ion-icon>
+                <ion-input [(ngModel)]="refby" (ngModelChange)="optionsrefby()" class="ioninput" placeholder="Referred By"></ion-input>
+              </ion-item>
+
+              <ion-item>
+                  <ion-icon name="call"></ion-icon>
+                  <ion-input [(ngModel)]="mob" (ngModelChange)="optionsmob()" class="ioninput" placeholder="Mobile No."></ion-input>
+                </ion-item>
+              <br>
+              </ion-item>
+              
+    </ion-card>
+</ion-content>
+
+<ion-footer *ngIf="nine" (click)="selecttestPage()" >
+  <ion-toolbar >
+      <ion-button color="primary" expand="full"><h2>NEXT</h2></ion-button>
+  </ion-toolbar>
+</ion-footer>

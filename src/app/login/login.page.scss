@@ -1,0 +1,229 @@
+.form{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.go-to-register{
+    padding-left: 25px;
+}
+.getstart{
+
+    --background: url('../../assets/img/bg.jpg') no-repeat center/cover fixed;
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    //opacity: 0.5;
+   
+}
+
+.content{
+    --background: url('../../assets/img/angryimg.png') no-repeat center/cover fixed;
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#colf6{
+    background-color: #e5e5e7;
+}
+.customhomeimg{
+    height: 450px;
+    padding-left: 120px;
+}
+
+#card{
+    background-color: #e5e5e7;
+    border-radius: 50px;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+
+.cardd{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+}
+
+.customcardlogin{
+    padding-left: 750px;
+    padding-right: 100px;
+    padding-top: 180px;
+}
+
+.hello{
+    background-image: url('../../assets/img/bg.jpg') no-repeat center/cover fixed;
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    //opacity: 0.5;
+}
+
+.loader {
+    .loading-wrapper {
+      --background: transparent;
+      box-shadow: none;
+    }
+  }
+
+
+  ion-loading.transparent {
+    .loading-wrapper {
+      background: transparent;
+      box-shadow: none;
+  
+      .spinner-crescent circle {
+        stroke-width: 8px;
+      }
+    }
+  }
+
+  #slide {
+    position: relative;
+    left: -600px;
+    width: 600px;
+    height: 300px;
+    background: rgb(2, 14, 68);
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.logincard{
+    background: #e5e5e7;
+    border-radius: 20px;
+}
+
+#slidee {
+    position: relative;
+    left: -600px;
+    width: 600px;
+    height: 140px;
+    background: rgb(2, 14, 68);
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.fontcolorp{
+    color: rgba(212, 202, 202, 0.644);
+    font-size: 12px;
+}
+
+#slideee {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 160px;
+    background: rgb(2, 14, 68);
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  /* The style below is just for the appearance of the example div */
+  
+  .style {
+    background-color: #e5e5e7;
+  }
+  .style p {
+   
+  }
+
+  .wholecard{
+      background: rgb(186, 230, 215);
+      border-radius: 30px;
+  }
+  .wholecard1{
+    background: rgb(186, 230, 215);
+    border-radius: 30px;
+}
+.wholecard2{
+    background: rgb(186, 230, 215);
+    border-radius: 30px;
+}
+.wholecard3{
+    background: rgb(186, 230, 215);
+    border-radius: 30px;
+}

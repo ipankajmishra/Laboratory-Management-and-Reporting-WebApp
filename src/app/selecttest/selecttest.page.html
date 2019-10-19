@@ -1,0 +1,68 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+        <ion-row>
+            <ion-col size="11">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Category</h3>
+          
+            </ion-col>
+            <ion-col size="1">
+                <ion-button expand="block" fill="outline" (click)="logout()">Logout</ion-button>
+          
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-card class="customcard">
+        <ion-grid>
+            <ion-row>
+                <ion-col size class='cardtest' *ngFor="let test of categories; let i = index">
+                    <ion-card (click)="openModal(test.name,test.uniqueid)" class="custominnercard" [ngStyle]="{'background-color': getRandomColor()}">
+                    
+                        <ion-card-content>
+                            <ion-card-title>
+                                <span class="textCardtest">{{ test.name }}</span>
+                        
+                            </ion-card-title>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-card>
+
+
+    
+    
+    
+    <!--<span class="customheightbutton"><ion-button  *ngIf="turnnext" color="primary" fill="outline" expand="block"><span class="custombutton">Proceed to next step</span></ion-button></span>-->
+    <ion-item-divider>
+            <ion-label>
+                Selected Tests are :
+            </ion-label>
+          </ion-item-divider>
+    <br>
+    <ion-grid>
+            <ion-row>
+                <ion-col class='cardtest' *ngFor="let test of chiparray; let i = index">
+                    <ion-chip outline color="tertiary">
+                            <ion-label>{{ test.name }}</ion-label>
+                    </ion-chip>
+                    
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+      
+
+
+</ion-content>
+<ion-footer *ngIf="turnnext">
+        <ion-toolbar >
+            <ion-button (click)="goTofillPage()" color="primary"  expand="block"><h2>Next</h2></ion-button>
+        </ion-toolbar>
+ </ion-footer>

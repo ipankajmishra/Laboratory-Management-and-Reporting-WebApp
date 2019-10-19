@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+        <ion-col size="11">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi, Welcome to dashboard</h3>
+      
+        </ion-col>
+        <ion-col size="1">
+            <ion-button expand="block" fill="outline" (click)="logout()">Logout</ion-button>
+      
+        </ion-col>
+    </ion-row>
+    
+</ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+
+  <ion-row>
+    <ion-col size="4">
+      <ion-card class="card" (click)="newsample()">
+
+          <ion-row>
+              
+            <ion-col size="5">
+                <br><br>
+                <img class="addnew" src="../../assets/img/addnew.png">
+            </ion-col>
+            <ion-col size="7">
+                <br><br><br>
+                <span style="font-size: 48px">NEW SAMPLE</span>
+            </ion-col>
+          </ion-row>
+      </ion-card>
+    </ion-col>
+    <ion-col size="4">
+        <ion-card class="card">
+
+            <ion-row>
+                
+              <ion-col size="5">
+                  <br><br>
+                  <img class="addnew" src="../../assets/img/record.jpg">
+              </ion-col>
+              <ion-col size="7">
+                  <br><br><br>
+                  <span style="font-size: 48px">VIEW REPORTS</span>
+              </ion-col>
+            </ion-row>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+          <ion-card class="card">
+              <img src="../../assets/img/soon.jpeg">
+            </ion-card>
+        </ion-col>
+  </ion-row>
+
+  <ion-row>
+      <ion-col size="4">
+        <ion-card class="card">
+            <img src="../../assets/img/soon.jpeg">
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-card class="card">
+            <img src="../../assets/img/soon.jpeg">
+        </ion-card>
+        </ion-col>
+        <ion-col size="4">
+            <ion-card class="card">
+                <img src="../../assets/img/soon.jpeg">
+              </ion-card>
+          </ion-col>
+    </ion-row>
+    <br>
+    <p align="center">
+        Made with <ion-icon name="heart"></ion-icon> in India</p>
+</ion-content>
+<!--<ion-footer (click)="logout()" >
+  <ion-toolbar >
+      <ion-button color="primary" expand="full"><h2>NEXT</h2></ion-button>
+  </ion-toolbar>
+</ion-footer>-->

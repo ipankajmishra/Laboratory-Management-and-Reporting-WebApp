@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+        <ion-row>
+            <ion-col size="11">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fill Details</h3>
+          
+            </ion-col>
+            <ion-col size="1">
+                <ion-button expand="block" fill="outline" (click)="logout()">Logout</ion-button>
+          
+            </ion-col>
+        </ion-row>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+
+    <ion-row>
+      <ion-col size="9">
+          <ion-card class="customcard">
+              <ion-row>
+                  <ion-col size="3">
+                      <span style="font-size: 18px" class="textCardtest"><strong>Test Name</strong></span>
+                  </ion-col>
+                  <ion-col size="3">
+                      <span style="font-size: 18px" class="textCardtest"><strong>Normal Range</strong></span>
+                  </ion-col>
+                  <ion-col size="3">
+                      <span style="font-size: 18px" class="textCardtest"><strong>Unit</strong></span>
+                  </ion-col>
+                  <ion-col size="3">
+                      <span style="font-size: 18px" class="textCardtest"><strong>Result</strong></span>
+                  </ion-col>
+               </ion-row>
+              <ion-list>
+                  
+                      <ion-card *ngFor="let test of categories; trackBy:indexTracker; let i = index">
+                       
+                       <ion-row>
+                          <ion-col size="3">
+                              <span class="textCardtest">{{ test.name }}</span>
+                          </ion-col>
+                          <ion-col size="3">
+                              <span class="textCardtest">{{ test.lower }} - {{ test.upper }}</span>
+                          </ion-col>
+                          <ion-col size="3">
+                              <span class="textCardtest">{{ test.unit }}</span>
+                          </ion-col>
+                          
+                          <ion-col size="3">
+                              <ion-input [(ngModel)]="test.temp" (ngModelChange)="updateresult(test)" placeholder="Enter Input"></ion-input>
+                          </ion-col>
+                       </ion-row> 
+                              
+                                  
+                         
+                      </ion-card>
+                  
+              </ion-list>
+          </ion-card>
+      </ion-col>
+      <ion-col size="3">
+          <ion-button expand="block" fill="outline" (click)="gotoview()">Preview</ion-button>
+      </ion-col>
+    </ion-row>
+
+</ion-content>

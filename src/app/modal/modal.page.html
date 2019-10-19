@@ -1,0 +1,51 @@
+<ion-header class="headercolor">
+  
+   
+      <ion-row >
+        <ion-col size="10">
+            <p class="headertext">{{modalTitle}} [{{uniqueid}}]</p> 
+        </ion-col>
+        
+        <ion-col size="2">
+            <ion-chip (click)="closeModal()">Close</ion-chip>
+        </ion-col>
+      </ion-row>
+   
+      
+          
+      
+          
+      
+    
+    
+  
+</ion-header>
+
+<ion-content padding>
+    <!--
+      <ion-row *ngFor="let test of categories; let i = index">
+         
+        
+            <ion-col size="10">
+                {{test.name}}
+            </ion-col>
+            <ion-col size="2">
+                <ion-fab-button class="fabicon" (click)="addtotemp(test)">
+                    
+                  <ion-icon *ngIf="deleteSelectedtest" name="add"></ion-icon>
+                  <ion-icon *ngIf="!deleteSelectedtest" name="call"></ion-icon>
+                </ion-fab-button>
+            </ion-col>
+         
+          
+              
+          
+    </ion-row>
+  -->
+    <ion-list>
+        <ion-item *ngFor="let entry of categories">
+          <ion-label>{{entry.name}}</ion-label>
+          <ion-checkbox slot="end" [(ngModel)]="entry.isChecked" (ionChange)="addtotemp(entry.isChecked,entry)"></ion-checkbox>
+        </ion-item>
+      </ion-list>
+</ion-content>

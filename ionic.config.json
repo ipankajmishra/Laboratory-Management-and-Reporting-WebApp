@@ -1,0 +1,7 @@
+{
+  "name": "pdc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

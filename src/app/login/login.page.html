@@ -1,0 +1,95 @@
+<!--<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pankaj Diagnostic Center Lab Management (PDCLMS)</ion-title>
+  </ion-toolbar>
+  <ion-chip outline>
+      <ion-label color="primary"><h1>Pankaj Diagnostic Center Lab Management (PDCLMS)</h1></ion-label>
+    </ion-chip>
+</ion-header>-->
+ 
+<ion-content  padding ><!--class="getstart"-->
+  <ion-card class="wholecard1">
+    <ion-card class="wholecard2">
+        <ion-card class="wholecard3">
+            <ion-card class="wholecard">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <ion-chip outline >
+                      <ion-label color="danger"><h1><strong>PANKAJ DIAGNOSTIC CENTER LAB MANAGEMENT (PDCLMS)</strong> </h1></ion-label>
+                    </ion-chip>
+                <ion-row>
+              
+                  <ion-col size="6">
+                    <ion-card class="style fade-in" id="card"><!--colf6-->
+                        <img class="customhomeimg" src="../../assets/img/lims-1604450.png">
+                    </ion-card>
+                      
+                  </ion-col>
+                  <ion-col size="6"><!--class="customcardlogin"-->
+                      
+                    <ion-card id="slide" class="card"><!--class="card"-->
+                        <br>
+                          <form class="form" [formGroup]="validations_form"  (ngSubmit)="loginUser(validations_form.value)"> <!--loginUser(validations_form.value)-->
+               
+                              <ion-card class="logincard">
+                                  <ion-item>
+                                      <ion-label  position="fixed" color="primary">Email</ion-label>
+                                      <ion-input type="text" formControlName="email"></ion-input>
+                                    </ion-item>
+                                    <!--<div class="validation-errors">
+                                      <ng-container *ngFor="let validation of validation_messages.email">
+                                        <div class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+                                          {{ validation.message }}
+                                        </div>
+                                      </ng-container>
+                                    </div>-->
+                                 
+                                    <ion-item>
+                                      <ion-label  position="fixed" color="primary">Password</ion-label>
+                                      <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+                                    </ion-item>
+                                    <!--<div class="validation-errors">
+                                      <ng-container *ngFor="let validation of validation_messages.password">
+                                        <div class="error-message" *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+                                          {{ validation.message }}
+                                        </div>
+                                      </ng-container>
+                                    </div>-->
+                              </ion-card>
+                              <br>
+                              <ion-button  class="submit-btn" type="submit"  [disabled]="!validations_form.valid">Log In</ion-button>
+                           
+                              <label class="error-message">{{errorMessage}}</label>
+                            </form>
+                            <p class="go-to-register">
+                              No account yet? 
+                                <ion-chip outline (click)="goToRegisterPage()">
+                                  <ion-label color="primary">Create an account.</ion-label>
+                                </ion-chip>
+                                <!--<a (click)="goToRegisterPage()">Create an account.</a>-->
+                            </p>
+                      </ion-card>
+              
+                      <ion-card id="slidee" class="cardd">
+                          <ion-card-header>
+                              
+                              <ion-card-title><span style="color:rgb(223, 96, 46)">Facing any isssue?</span></ion-card-title>
+                              <p class="fontcolorp">Contact Info :<br><br>
+                                  Email - pankaj.mishra2902@gmail.com<br>
+                                  Mob - +91 - XXXXXXXXXX<br>
+                                  Add - ABC-XXXX, Faridabad, Haryana
+                              </p>
+                            </ion-card-header>
+                      </ion-card>
+              
+                      
+                      <p>Made with <ion-icon name="heart"></ion-icon> in India</p>
+              
+                  </ion-col>
+                  
+                </ion-row>
+              </ion-card>
+        </ion-card>
+    </ion-card>
+  </ion-card>
+  
+</ion-content>
